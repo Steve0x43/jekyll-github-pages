@@ -34,5 +34,5 @@ WORKDIR /srv/jekyll
 
 EXPOSE 4000
 
-CMD jekyll --version && \
+CMD github-pages --version && \
     github-pages versions
