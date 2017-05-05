@@ -22,7 +22,7 @@ RUN apk add --update --no-cache \
     yaml \
     yaml-dev \
     zlib \
-    zlib-dev 
+    zlib-dev
 
 RUN gem install --no-document \
     bundler \
