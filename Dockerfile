@@ -2,7 +2,7 @@ FROM alpine:3.5
 
 LABEL maintainer Steve Crabb <steve@crabb.io>
 
-ENV GITHUB_PAGES_VERSION 136
+ENV GITHUB_PAGES_VERSION 137
 
 RUN apk add --update --no-cache \
     build-base \
