@@ -28,6 +28,11 @@ RUN gem install --no-document \
     bundler \
     github-pages:${GITHUB_PAGES_VERSION}
 
+RUN addgroup -g 1000 -S jekyll && \
+    adduser -u 1000 -S -H -D -g jekyll -G jekyll jekyll
+
+USER jekyll
+
 VOLUME /srv/jekyll
 
 WORKDIR /srv/jekyll
